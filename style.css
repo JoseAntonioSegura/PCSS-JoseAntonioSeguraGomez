@@ -1,0 +1,1468 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("https://us.123rf.com/450wm/panychev/panychev1604/panychev160400448/55678195-resumen-de-fondo-azul-elemento-de-dise%C3%B1o-tel%C3%B3n-de-fondo-para-obras-de-arte-y-carteles-.jpg?ver=6");
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+#bordeSuperior {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border: solid 2px black;
+    width: 90%;
+    height: 2em;
+    margin: auto;
+}
+
+
+#contenedorPrincipal {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: auto;
+    width: 90%;
+    border: solid 2px black;
+    margin: 0 auto;
+}
+
+#menuLateral {
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/276/148/1017/square-dark-shapes-black-wallpaper-preview.jpg");
+    width: 18%;
+    height: auto;
+    background-size: cover;
+}
+
+#menuLateral div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 20% 2% 20% 0px;
+}
+
+#menuLateral div div {
+    width: 3%;
+    height: 20px;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 8%;
+}
+
+#menuLateral a {
+    width: 70%;
+    height: 10%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.divDecorativo{
+    background-color: rgb(255, 255, 255);
+}
+
+#menuLateralImagen{
+    height: auto;
+    margin: 0px;
+}
+
+#menuLateral div:hover .divDecorativo {
+    background-color: rgb(0, 247, 255);
+}
+
+
+#menuLateral div:hover h1{
+    color: rgb(0, 247, 255);
+    scale: 1.15;
+    transition: all 0.4s ease 0s;
+}
+
+#menuLateral img {
+    width: 40%;
+    height: 30%;
+    border-radius: 100px;
+    margin: auto;
+}
+#menuLateral h1 {
+    color: white;
+    font-size: 1.5em; /* Cambiar el tamaño del texto a em */
+    animation-duration: 3s;
+    animation-name: animacionMenu;
+    text-align: left;
+}
+
+@keyframes animacionMenu {
+    0% {
+       opacity: 0;
+       transform: translateY(-2000px);
+    }
+    60% {
+       opacity: 1;
+       transform: translateY(30px);
+    }
+    80% {
+       transform: translateY(-10px);
+    }
+    100% {
+       transform: translateY(0);
+    }
+} 
+
+/* Estilos base */
+#fondoEncabezado {
+    background-image: url("https://images4.alphacoders.com/741/74166.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+    border: solid 2px black;
+    display: flex;
+    justify-content: space-between; /* Alinear los elementos al extremo */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px; /* Agregar un espacio interior */
+}
+
+#fondoIzquierdo div img {
+    margin-bottom: -20px;
+    animation-duration: 5s;
+    animation-name: imagen;
+    border-radius: 200px;
+
+}
+
+#fondoIzquierdo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#fondoIzquierdo div {
+    margin: 20px;
+}
+
+#fondoDerecho {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#fondoEncabezado h1 {
+    color: white;
+}
+
+@keyframes animacionTexto {
+    0% {
+        opacity: 0;
+        font-size: 42px;
+        transform: translateY(-2000px);
+    }
+    60% {
+        opacity: 0.5;
+        font-size: 42px;
+        transform: translateY(30px);
+    }
+    80% {
+        opacity: 1;
+        font-size: 42px;
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        font-size: 42px;
+    }
+}
+
+@keyframes animacionTextoTitulos {
+    0% {
+        opacity: 0;
+        font-size: 32px;
+        transform: translateY(-2000px);
+    }
+    60% {
+        opacity: 0.5;
+        font-size: 32px;
+        transform: translateY(30px);
+    }
+    80% {
+        opacity: 1;
+        font-size: 32px;
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        font-size: 32px;
+    }
+}
+
+@keyframes imagen {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+}
+
+
+#nombre {
+    background-color: rgba(43, 43, 43, 0.843);
+    margin: auto;
+    vertical-align: middle;
+    justify-content: center;
+    font-size: 42px;
+    animation-duration: 3s;
+    animation-name: animacionTexto;
+    padding: 15px;
+    border-radius: 20px 20px 0 0 ;
+}
+#apellidos {
+    background-color: rgba(43, 43, 43, 0.843);
+    margin: auto;
+    padding: 15px;
+    padding-left: 100px;
+    font-size: 42px;
+    animation-duration: 3s;
+    animation-name: animacionTexto;
+    border-radius: 0 0 20px 20px;
+}
+
+#titulo1,
+#titulo2 {
+    text-align: center;
+    margin: 10px;
+    padding: 0;
+    font-size: 32px;
+    animation-duration: 3s;
+    animation-name: animacionTextoTitulos;
+    background-color: rgba(43, 43, 43, 0.843);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+#descarga{
+    height: auto;
+    width: 150%;
+    color: black;
+    background-color: aqua;
+    border: 3px solid black;
+    display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+
+#descarga a,h1,div{
+    text-decoration: none;
+}
+
+#descarga h1{
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    
+}
+
+#descarga:hover{
+    transition: all .2s; 
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    }
+
+/* Main */
+
+main {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;   
+    background-color: rgba(127, 130, 132, 0.623);
+    display: block;
+}
+
+/* Sobre mi  */
+
+#sobreMi {
+    display: flex;
+    position: relative;
+    background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
+    background-size: cover;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px black solid;
+    justify-content: center;
+    vertical-align: middle;
+    padding-top: 40px;
+    padding-bottom: 10%;
+}
+
+#sobreMi div {
+   width: 50%;
+   display: inline-flex;
+   flex-wrap: wrap;
+}
+
+#sobreMi h1 {
+    margin: auto;
+    margin-left: 30px;
+    padding-top: 30px;
+    font-size: 32px;
+}
+
+#sobreMi p {
+    margin: auto;
+    padding-left: 42px;
+    padding-right: 100px;
+    line-height: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#sobreMi img {
+    top: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 45%;
+    height: auto;
+    border: 2px solid;
+}
+#sobreMi iframe {
+    width: 90%;
+    height: 60%;
+    position: relative;
+}
+#sobreMi img:hover{
+    transition: all .2s; 
+    transform: scale(1.06);
+}
+#sobreMi iframe:hover{
+    transition: all .2s; 
+    transform: scale(1.02);
+}
+
+.tituloMain {
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+    font-size: 18px;
+    background: linear-gradient(to right, black, transparent);
+    border-radius: 20px;
+    margin: auto;
+    margin: 100px;
+
+}
+
+@media only screen and (max-width: 1368px) {
+    #sobreMi {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #sobreMi div {
+        width: 100%;
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    #sobreMi img {
+        width: 40%;
+        margin: auto;
+    }
+
+    #sobreMi iframe {
+        width: 95%;
+        height: 300px;
+        margin: auto;
+    }
+}
+
+
+/* Datos de contacto */
+#datosDeContacto {
+    border: 2px black solid;
+    background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
+    background-size: cover;
+    margin: auto;
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#datosDeContacto div {
+    background-size: cover;
+    margin: 2% 0 2% 0;
+    width: 50%;
+    height: calc(100% / 3 - 20px);
+    display: flex;
+    align-items: center;
+}
+
+#datosDeContacto img {
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 100px;
+    margin-right: 40px; /* Agrega un margen derecho para separar la imagen del texto */
+    margin-left: 50px;
+}
+
+#datosDeContacto h1 {
+    margin-right: 20px; 
+    font-size: 24px;
+}
+
+#datosDeContacto h2 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.757);
+    display: flex;
+    flex-wrap: wrap;
+    word-break: break-all; /* Agrega esta línea para dividir las palabras largas */
+}
+#datosDeContacto img:hover {
+    transition: all .2s; 
+    transform: scale(1.15);
+    border-color: rgb(0, 255, 242);
+}
+
+@media only screen and (max-width: 1390px) {
+    #datosDeContacto h1 {
+        font-size: 120%;
+    }
+
+    #datosDeContacto h2 {
+        font-size: 100%;
+    }
+
+    #datosDeContacto img {
+        margin: 5%;
+        width: 70px;
+    }
+}
+
+
+/* Formacion Academica (no me peges gema que no puedo poner tildes con el teclado en ingles)*/
+#contenedoresCartas {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    border-radius: 20px;
+}
+
+
+#contenedorCarta, #contenedorCarta2, #contenedorCarta3 {
+    font-size: 0.8em;
+    margin: 50px;
+    transition: all 0.3s ease 0s;
+    width: 350px;
+    animation: saltos ;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#contenedorCarta:hover {
+    animation: none ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;  
+}
+#contenedorCarta2:hover {
+    animation: none ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+#contenedorCarta3:hover {
+    animation: none ;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    
+}
+#contenedorCarta:hover #carta1 {
+    transform: rotateY(180deg);
+}
+
+.carta {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3a/Ies_Ram%C3%B3n_del_Valle_Incl%C3%A1n%2C_Sevilla_Este%2C_Sevilla%2C_Espa%C3%B1a%2C_2015_07.JPG");
+    background-size: cover;
+    height: 330px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 350px;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.carta p{
+    margin-top: 252px;
+    margin-left: 312px;
+    font-size: 20px;
+    color: rgb(0, 247, 255);
+}
+
+#contenedorCarta3 .carta {
+    background-image: url("https://adaits.es/files/2017/03/noticia-sin-imagen.jpg");
+    background-size: cover;
+    cursor: default;
+    height: 330px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 350px;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#carta1 {
+    background-image: url("https://1.bp.blogspot.com/-IhQnDajooAY/WuMFJjzxETI/AAAAAAAAAMs/iVaFdPotkIcU21a5eGit3_LcdAD-LrjAACK4BGAYYCw/s1600/Logo%2BMoliner%2Bm%25C3%25A1s%2Bp%25C3%25ADxeles%2B2.JPG");
+    background-size: 400px 350px;
+    cursor: default;
+    height: 330px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 350px;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+#carta1 p{
+    margin-top: 252px;
+    margin-left: 312px;
+    font-size: 20px;
+    color: rgb(0, 247, 255);
+}
+#carta1 li{
+    text-align: left;
+}
+
+#contenedorCarta2,#contenedorCarta3 .carta li{
+    text-align: left;
+}
+
+
+.frontal, .detras {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: 20px;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+.detras {
+    transform: rotateY( 180deg);
+}
+
+#contenedorCarta2:hover .carta {
+    transform: rotateY(180deg);
+}
+
+#contenedorCarta3:hover .carta {
+    transform: rotateY(180deg);
+}
+
+#contenedorCarta #carta1 .detras {
+    background-image: url("https://media.istockphoto.com/id/1194009136/es/vector/abstracto-vector-blanco-fondo.jpg?s=612x612&w=0&k=20&c=KZcOB_67qsKFNgL6xnRyWMnpfDNmMFHHwlgshpxS01c=");
+    background-size: cover;
+    border-radius: 20px;
+}
+#contenedorCarta2 .carta .detras {
+    background-image: url("https://media.istockphoto.com/id/1194009136/es/vector/abstracto-vector-blanco-fondo.jpg?s=612x612&w=0&k=20&c=KZcOB_67qsKFNgL6xnRyWMnpfDNmMFHHwlgshpxS01c=");
+    background-size: cover;
+    border-radius: 20px;
+} 
+#contenedorCarta3 .carta .detras {
+    background-image: url("https://media.istockphoto.com/id/1194009136/es/vector/abstracto-vector-blanco-fondo.jpg?s=612x612&w=0&k=20&c=KZcOB_67qsKFNgL6xnRyWMnpfDNmMFHHwlgshpxS01c=");
+    background-size: cover;
+    border-radius: 20px;
+}
+
+@keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+}
+@-webkit-keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+}
+
+#saltos {
+    animation-name: saltos;
+    animation-timing-function: ease;
+}
+@keyframes saltos {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-30px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(0px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+
+/* Experiencia Laboral */
+
+#experienciaLaboral {
+    background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
+    background-size: cover;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px black solid;
+    padding-top: 40px;
+}
+
+.empresa{
+    width: 100%;
+    height: 350px;
+
+}
+
+.experienciaTexto {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+}
+
+.experienciaImagen {
+    height: 200px;
+    width: 30%;
+    float: right;
+    margin-left: 20px;
+}
+
+#experienciaLaboral li {
+    margin-left: 60px;
+}
+
+#experienciaLaboral p {
+    font-size: 21px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 10px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    flex-wrap: wrap;
+}
+
+.logos img {
+    object-fit: cover contain;
+    width: 100px;
+    height: 45px;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+
+.logos  {
+    margin-right: 20px;
+
+}
+
+#experienciaLaboral #empresa1,#empresa2 {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+#experienciaLaboral img:hover{
+    scale: 1.1;
+    transition: 1s;
+}
+
+
+ 
+/* Tecnologias */
+#habilidades{
+    width: 80%;
+    margin: auto;
+    background-color: #7f7f7fa5;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #7f7f7fa5;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.contenedorHabilidad{
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: auto;
+    background-color: #000000;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+}
+
+.contenedorHabilidadImagen img{
+    object-fit: contain cover;
+    width: 100%;
+    height: 180px;
+}
+
+.contenedorHabilidadPorcentaje {
+    width: 100%;
+    height: 20px;
+    background-color: #7f7f7f;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .porcentajeAnimado {
+    height: 100%;
+    background-color: aqua;
+    animation: crecer 2s forwards;
+    margin: 0px;
+    transform: translatex(-100%);
+    transition: transform 0.5s ease;
+  }
+  
+  @keyframes crecer {
+    from {
+      width: 0%;
+      
+    }
+    to {
+      width: var(--porcentaje);
+    }
+  }
+  
+  
+#habilidades:hover .porcentajeAnimado {
+    transform: translatex(0%);
+    transition-duration: 3s;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    #experienciaLaboral #empresa1,#empresa2,.experienciaImagen {
+
+        display: none;
+
+        object-fit: none;
+
+    }
+
+}
+
+ /* Skills */
+
+#skills {
+    width: 80%;
+    margin: auto;
+    background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    transform: translatey(10%);
+    max-height: 70px;
+    transition: max-height 3s ease;
+}
+
+
+#skills:hover {
+    max-height: 550px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    font-size: 18px;
+    margin-bottom: 20px;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 5px;
+    text-align: center;
+    flex: 1 0 100%;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 4s ease;
+}
+
+#skills:hover ul li {
+    opacity: 1;
+}
+
+#skills h1 {
+    font-size: 32px;
+    letter-spacing: 5px;
+    margin: 0 auto 20px;
+    margin-bottom: 50px;
+}
+
+#aptitudes {
+    padding: 20px;
+    height: 300px;
+    width: 30%;
+}
+
+#aptitudes2 {
+    padding: 20px;
+    height: 300px;
+    width: 30%;
+}
+
+#idiomas {
+    width: 30%;
+    height: 300px;
+    padding: 20px;
+}
+
+
+/* FOOTER */
+#footer{
+    background-image: url(Imagenes/black_abstract_geometric_background.png);
+    background-size: cover;
+    width: 90%;
+    height: auto;
+    position: relative;
+    padding: 50px 0px 50px 0px;
+    justify-content: center;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+#footer div {
+    background-image: url(https://cdn.create.vista.com/api/media/medium/183355834/stock-photo-blank-abstract-grey-textured-background?token=) ;
+    width: 20%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 20px;
+    float: left;
+    margin: auto;
+
+}
+
+#footer div img {
+    width: 20%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 180px;
+    display: flex;
+    border: solid 3px transparent;
+}
+
+
+#footer div h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#footer #footerCorreo h2 {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#footer #redesSociales {
+    width: 33%;
+}
+
+#footer img:hover {
+    scale: 1.1;
+    transition: all 1s;
+    border: solid 3px aqua;
+}
+
+#redesSociales a img {
+    display: inline-flex;
+    width: 12%;
+    margin: auto;
+    margin-left: 6%;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1360px) {
+    #bordeSuperior{
+        width: 100%;
+        border: none;
+    }
+
+    #contenedorPrincipal {
+        width: 100%;
+        border: none;
+    }
+
+    body {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    main{
+        width: 100%;
+    }
+
+    #footer{
+        width: 100%;
+    }
+
+    #menuLateral{
+        width: 25%;
+    }
+    .tituloMain{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        border-radius: 20px;
+    }
+    
+}
+
+
+/* Resolución Tel'efono y Tablet */
+@media only screen and (max-width: 1024px) {
+    /* Header */
+    #menuLateral{
+        display: none;
+    }
+
+    #bordeSuperior{
+        width: 100%;
+        margin: 0px;
+        border: 0px;
+    }
+
+    #fondoEncabezado {
+        width: 100%;
+        margin: 0px;
+        flex-wrap: wrap; 
+        padding: 0px;
+        text-align: center;
+        border: 0px;
+    }
+
+    #fondoEncabezado div{
+        width: 100%;
+        margin: 5%;
+    }
+
+    #fondoEncabezado div div {
+        width: 100%;
+        margin: auto;
+    }
+
+    #fondoEncabezado img {
+        width: 40%;
+        height: auto;
+        margin: auto;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    #contenedorPrincipal{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+
+    #contenedorPrincipal #fondoIzquierdo #nombre{
+        font-size: 30px;
+        width: 80%;
+        margin: auto;
+        padding: 0px;
+    }
+
+    #contenedorPrincipal #fondoIzquierdo #apellidos{
+        font-size: 30px;
+        width: 80%;
+        margin: auto;
+        padding: 0px;
+        border-radius: 0px;
+    }
+
+    #contenedorPrincipal #fondoIzquierdo img{
+        background-color: rgba(0, 0, 0, 0.904);
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    #fondoDerecho #titulo2,#titulo1{
+        font-size: 28px;
+        margin: auto;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    #fondoDerecho a{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 75%;
+    }
+
+    /* main */
+    body {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    main{
+        width: 100%;
+        padding: 0;
+    }
+
+    .tituloMain{
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        background: linear-gradient(to bottom, black, #2f2f2f);
+        font-size: 15px;
+        margin: 0px;
+        border-radius: 0%;
+    }
+
+    .tituloMain h1{
+        padding: 10px 10px 10px 0px;
+        margin-left: 10px;
+    }
+
+    /* Sobre Mi */
+    #sobreMi{
+        width: 100%;
+        border-radius: 0px;
+        background-image: none;
+        border: none;
+        background: linear-gradient(to bottom, #7a7a7ac0, #7a7a7a3f);
+        padding: 0%;
+        padding-bottom: 50px;        
+    }
+
+    #sobreMi div{
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+        padding: 0%;
+        padding-bottom: 0%;        
+    }
+
+    #sobreMi h1{
+        font-size: 190%;
+        padding-top: 30px;
+        margin: auto;
+    }
+    
+    #sobreMi p{
+        padding: 5%;
+        padding-left: -20px;
+    }
+
+    #sobreMi img{
+        width: 40%;
+        margin: auto;
+        padding: auto;
+    }
+
+    #sobreMi iframe{
+        width: 98%;
+        height: 250px;
+        margin: auto;
+        padding: auto;
+    }
+
+    /* Datos */
+    #datosDeContacto{
+        width: 100%;
+        border-radius: 0px;
+        background-image: none;
+        border: none;
+        background: linear-gradient(to bottom, #7a7a7ac0, #7a7a7a3f);
+        padding: 0%;
+        padding-bottom: 0px;
+    }
+
+    #datosDeContacto div{
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.424);
+        background-image: none;
+        padding: auto;
+        margin: 0%;
+    }
+
+    #datosDeContacto div img{
+        width: 55px;
+        padding: 0%;
+        margin: 5%;
+        margin-right: 10px;
+    }
+
+    #datosDeContacto div h1{
+        font-size: 21px;
+    }
+
+    #datosDeContacto div h2{
+        font-size: 16px;
+    }
+
+    /* Estudios */
+    #contenedoresCartas{
+        margin: auto;
+        background: linear-gradient(to bottom, #7a7a7ac0, #7a7a7a3f);
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    #contenedoresCartas div{
+        margin-bottom: 10px;
+    }
+
+    /* Experiencia Laboral */
+    #experienciaLaboral{
+        width: 100%;
+        border-radius: 0px;
+        background-image: none;
+        border: none;
+        background: linear-gradient(to bottom, #7a7a7ac0, #7a7a7a3f);
+        padding: 0%;
+        margin-bottom: -20px;
+
+    }
+
+    #experienciaLaboral div{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    #experienciaLaboral .logos-container{
+        width: 80%;
+    }
+
+    #experienciaLaboral div img{
+        object-fit: cover;
+    }
+
+    #experienciaLaboral li{
+        padding: 0%;
+        margin: 0%;
+    }
+
+    #experienciaLaboral li p{
+        font-size: 18px;
+    }
+
+    /* Skills */
+    #habilidades{
+        width: 100%;
+        border-radius: 0px;
+        background-image: none;
+        border: none;
+        background: linear-gradient(to bottom, #7a7a7ac0, #7a7a7a3f);
+        padding: 0%;
+        padding-bottom: 0px;
+    }
+
+    /* Aptitudes */
+    #skills {
+        width: 100%;
+        background-image: url("https://png.pngtree.com/background/20220720/original/pngtree-light-gray-background-texture-picture-image_1684251.jpg");
+        background-size: cover;
+        border: 2px solid black;
+        overflow: hidden;
+        border-radius: 0%;
+        max-height: 70px;
+        margin: 0%;
+        padding: 0%;
+        margin-left: -1px;
+    }
+    
+    
+    #skills:hover {
+        max-height: 700px;
+    }
+    
+    #skills ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    #skills ul li {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    #skills h1 {
+        font-size: 24px;
+    }
+    
+    #aptitudes {
+        width: 40%;
+    }
+    
+    #aptitudes2 {
+        width: 40%;
+    }
+    
+    #idiomas {
+        width: 50%;
+    }
+    
+    
+    /* Footer */
+    #footer {
+        width: 100%;
+        margin: auto;
+        flex-wrap: wrap; 
+        display: flex;
+        align-items: center;
+    }
+    
+    #footer div img {
+        width: 60px;
+        margin: auto;
+    }
+    
+    #footer div{
+        min-width: 90%;
+        height: 100px;
+        margin: auto;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    
+    #footer #redesSociales h2{
+        display: none;
+    }
+    
+    #footer #redesSociales{
+        min-width: 90%;
+        height: 150px;
+        margin: auto;
+        padding: auto;
+        margin-top: 20px;
+        display: flex; 
+        justify-content: center;
+        display: flex;
+        vertical-align: middle;
+    }
+    
+    #footer #redesSociales a{
+        margin: auto;
+        padding: auto;
+    }
+
+    #footer div h2{
+        font-size: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+        
+    #footer #footerCorreo, #telefono {
+        display: none;
+    }
+
+    
+}
+
+/* Telefonos m'as pequenos */
+@media only screen and (max-width: 420px) {
+    #contenedorPrincipal #fondoIzquierdo #nombre{
+        font-size: 20px;
+
+    }
+
+    #sobreMi h1{
+        margin: auto;
+    }
+
+    #contenedorPrincipal #fondoIzquierdo #apellidos{
+        font-size: 20px;
+
+    }
+    #fondoDerecho #titulo2,#titulo1{
+        font-size: 20px;
+    }
+    
+    #fondoEncabezado img {
+        width: 50%;
+        height: auto;
+        margin: auto;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    #fondoDerecho a{
+        padding: 0%;
+        width: 90%;
+    }
+    
+    #datosDeContacto img{
+        width: 45px;
+    }
+
+    #datosDeContacto div h1{
+        font-size: 15px;
+    }
+
+    #datosDeContacto div h2{
+        font-size: 13px;
+    }
+
+
+    #skills:hover {
+        min-height: 1200px;
+    }
+
+    
+    #skills #aptitudes, #aptitudes2{
+        width: 100%;
+
+    }
+
+    #experienciaLaboral .logos-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Alinea los elementos horizontalmente */
+        align-items: flex-start; /* Alinia los elementos verticalmente al inicio del contenedor */
+    }
+
+    #experienciaLaboral .empresa{
+        margin-bottom: 100px;
+    }
+
+
+    #experienciaLaboral  {
+        width: 100%;
+        height: auto;
+        display: block;
+
+    }
+
+    #experienciaLaboral .experienciaTexto {
+    padding-top: 50px;
+}
+
+
+
+    .tituloMain h1{
+        font-size: 24px;
+    }
+
+    #sobreMi h1{ 
+        font-size: 22px;
+    }
+
+    #contenedorCarta .carta {
+        width: 100%;
+
+    }
+
+    #carta1,#carta2,.frontal,.detras {
+        width: 100%;
+        height: 200px;
+        background-size:  100% 100% ;
+    }
+
+    #contenedorCarta1 .carta{
+        width: 100%;
+        height: 200px;
+        background-size:  100% 100% ;
+    }
+    #contenedorCarta2 .carta{
+        width: 100%;
+        height: 200px;
+        background-size:  100% 100% ;
+    }
+    
+    #contenedorCarta3 .carta{
+        width: 100%;
+        height: 200px;
+        background-size:  100% 100% ;
+    }
+
+    .detras h1{
+        font-size: 14px;
+    }
+    
+    .detras li{
+        font-size: 14px;
+    }
+
+    
+
+    #contenedorCarta,#contenedorCarta2,#contenedorCarta3 {
+        margin: auto;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 20px;
+    }
+
+    #carta1 p {
+        margin: 0%;
+        color: transparent;
+    }
+
+    #carta2 p {
+        margin: 0%;
+        color: transparent;
+    }
+
+
+    .carta p {
+        margin: 0%;
+        color: transparent;
+    }
+
+
+}
