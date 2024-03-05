@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* body */
 body {
     background-image: url("https://us.123rf.com/450wm/panychev/panychev1604/panychev160400448/55678195-resumen-de-fondo-azul-elemento-de-dise%C3%B1o-tel%C3%B3n-de-fondo-para-obras-de-arte-y-carteles-.jpg?ver=6");
     width: 100%;
@@ -14,7 +15,7 @@ body {
 }
 
 
-
+/* borde superior */
 #bordeSuperior {
     display: flex;
     background-color: rgb(0, 0, 0);
@@ -24,6 +25,7 @@ body {
     margin: auto;
 }
 
+/* contenedor Header */
 
 #contenedorPrincipal {
     display: flex;
@@ -34,6 +36,7 @@ body {
     margin: 0 auto;
 }
 
+/*  MenuLateral */
 #menuLateral {
     background-image: url("https://p4.wallpaperbetter.com/wallpaper/276/148/1017/square-dark-shapes-black-wallpaper-preview.jpg");
     width: 18%;
@@ -97,6 +100,7 @@ body {
     text-align: left;
 }
 
+/* animación menu lateral */
 @keyframes animacionMenu {
     0% {
        opacity: 0;
@@ -128,6 +132,8 @@ body {
     padding: 20px;
 }
 
+
+/* contenedor izquierdo del div */
 #fondoIzquierdo div img {
     margin-bottom: -20px;
     animation-duration: 5s;
@@ -148,6 +154,7 @@ body {
     margin: 20px;
 }
 
+/* contenedor derecho */
 #fondoDerecho {
     width: 50%;
     display: flex;
@@ -160,6 +167,7 @@ body {
     color: white;
 }
 
+/* animaciones contenedor principal */
 @keyframes animacionTexto {
     0% {
         opacity: 0;
@@ -214,7 +222,7 @@ body {
     }
 }
 
-
+/* elementos contenedor izquierdo */
 #nombre {
     background-color: rgba(43, 43, 43, 0.843);
     margin: auto;
@@ -250,7 +258,7 @@ body {
     border-radius: 20px;
 }
 
-
+/* descargas */
 #descarga{
     height: auto;
     width: 150%;
@@ -283,7 +291,6 @@ body {
     }
 
 /* Main */
-
 main {
     width: 90%;
     height: auto;
@@ -368,6 +375,7 @@ main {
 
 }
 
+/* ajustar responsive en pantallas algo más pequeñas */
 @media only screen and (max-width: 1368px) {
     #sobreMi {
         display: grid;
@@ -420,7 +428,7 @@ main {
     width: 80px;
     border: 2px solid black;
     border-radius: 100px;
-    margin-right: 40px; /* Agrega un margen derecho para separar la imagen del texto */
+    margin-right: 40px;
     margin-left: 50px;
 }
 
@@ -434,7 +442,7 @@ main {
     color: rgba(0, 0, 0, 0.757);
     display: flex;
     flex-wrap: wrap;
-    word-break: break-all; /* Agrega esta línea para dividir las palabras largas */
+    word-break: break-all;
 }
 #datosDeContacto img:hover {
     transition: all .2s; 
@@ -603,6 +611,7 @@ main {
     border-radius: 20px;
 }
 
+/* animaciones */
 @keyframes giro {
     from {
       transform: rotateY( 180deg);
@@ -753,26 +762,27 @@ main {
     background-color: #7f7f7f;
     position: relative;
     overflow: hidden;
-  }
+}
   
-  .porcentajeAnimado {
+.porcentajeAnimado {
     height: 100%;
     background-color: aqua;
     animation: crecer 2s forwards;
     margin: 0px;
     transform: translatex(-100%);
     transition: transform 0.5s ease;
-  }
-  
-  @keyframes crecer {
+}
+/* animación barra */
+
+@keyframes crecer {
     from {
-      width: 0%;
-      
+        width: 0%;
+        
     }
     to {
-      width: var(--porcentaje);
+        width: var(--porcentaje);
     }
-  }
+}
   
   
 #habilidades:hover .porcentajeAnimado {
@@ -934,6 +944,7 @@ main {
     margin-top: 20px;
 }
 
+/* responsive para pantallas más pequeñas */
 @media only screen and (max-width: 1360px) {
     #bordeSuperior{
         width: 100%;
@@ -972,7 +983,7 @@ main {
 }
 
 
-/* Resolución Tel'efono y Tablet */
+/* Resolución Tel'efonos y Tablets */
 @media only screen and (max-width: 1024px) {
     /* Header */
     #menuLateral{
@@ -1314,7 +1325,7 @@ main {
     
 }
 
-/* Telefonos m'as pequenos */
+/* Teléfonos más pequeños */
 @media only screen and (max-width: 420px) {
     #contenedorPrincipal #fondoIzquierdo #nombre{
         font-size: 20px;
@@ -1373,8 +1384,8 @@ main {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; /* Alinea los elementos horizontalmente */
-        align-items: flex-start; /* Alinia los elementos verticalmente al inicio del contenedor */
+        justify-content: center;
+        align-items: flex-start;
     }
 
     #experienciaLaboral .empresa{
